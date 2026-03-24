@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,7 +10,7 @@ import Checkout from './pages/Checkout';
 function App() {
   return (
     <CartProvider>
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div className="d-flex flex-column min-vh-100">
           <Header />
           <main className="flex-grow-1">

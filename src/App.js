@@ -10,7 +10,7 @@ import Checkout from './pages/Checkout';
 function App() {
   return (
     <CartProvider>
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <div className="d-flex flex-column min-vh-100">
           <Header />
           <main className="flex-grow-1">

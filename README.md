@@ -4,6 +4,22 @@
 
 مشروع **React** لتطبيق توصيل الطعام باستخدام **React** و **Bootstrap** (واجهة **NomNom Express**).
 
+### لماذا أرى README وليس الموقع على GitHub؟
+
+- رابط المستودع `github.com/.../food-delivery-app` يعرض **الكود وملف README** — هذا طبيعي.
+- **الموقع الحقيقي** يعمل بعد **النشر** (مثل GitHub Pages) على رابط منفصل:
+
+**🔗 الموقع المنشور:** [https://zaynab-abdallah.github.io/food-delivery-app/](https://zaynab-abdallah.github.io/food-delivery-app/)
+
+للنشر من جهازك (مرة واحدة بعد كل تحديث تريدين رفعه):
+
+```bash
+npm install
+npm run deploy
+```
+
+ثم في GitHub: **Settings → Pages** → تأكدي أن المصدر **Branch: gh-pages** و **/ (root)**.
+
 ---
 
 ### المميزات

@@ -1,53 +1,91 @@
-# 🍕 Food Delivery App - تطبيق توصيل الطعام
+# food-delivery-app
 
-مشروع React لتطبيق توصيل الطعام باستخدام React و Bootstrap.
+## 🍕 Food Delivery App — تطبيق توصيل الطعام
 
-## المميزات
+مشروع **React** لتطبيق توصيل الطعام باستخدام **React** و **Bootstrap** (واجهة **NomNom Express**).
+
+---
+
+### المميزات
 
 - ✅ عرض قائمة الطعام مع الصور والوصف والسعر
-- ✅ فلترة الطعام حسب النوع (بيتزا، برجر، مشروبات، حلويات، وجبات سريعة)
+- ✅ فلترة الطعام حسب النوع (بيتزا، برجر، معكرونة، سلطات، سندويشات، إفطار، مشروبات، قهوة وشاي، حلويات، وجبات سريعة)
 - ✅ سلة الطلب مع إضافة/إزالة العناصر وتعديل الكمية
 - ✅ واجهة مستخدم تفاعلية باستخدام Bootstrap
-- ✅ صفحة Checkout لعرض إجمالي السعر ومعلومات الطلب
-- ✅ حفظ السلة في LocalStorage عند إعادة تحميل الصفحة
+- ✅ صفحة Checkout لعرض إجمالي السعر ومعلومات التوصيل
+- ✅ حفظ السلة في **LocalStorage** عند إعادة تحميل الصفحة
+- ✅ قسم **Featured Items** في الصفحة الرئيسية
 
-## التثبيت والتشغيل
+---
+
+### التثبيت والتشغيل
 
 ```bash
-# تثبيت الحزم
 npm install
-
-# تشغيل المشروع
 npm start
 ```
 
-المشروع سيعمل على: http://localhost:3000
+يفتح المشروع على: **http://localhost:3000**
 
-## هيكل المشروع
+لبناء نسخة الإنتاج:
+
+```bash
+npm run build
+```
+
+---
+
+### هيكل المشروع
 
 ```
 src/
-├── components/      # المكونات
+├── components/
 │   ├── Header.js
 │   ├── Footer.js
 │   ├── MenuCard.js
+│   ├── SidebarFoodCard.js
 │   ├── Cart.js
 │   └── Filter.js
-├── pages/           # الصفحات
+├── pages/
 │   ├── Home.js
 │   ├── Menu.js
 │   └── Checkout.js
-├── context/         # إدارة الحالة
+├── context/
 │   └── CartContext.js
-├── data/            # بيانات الطعام
+├── data/
 │   └── menuData.js
 ├── App.js
 └── index.js
 ```
 
-## التقنيات المستخدمة
+---
 
-- React 18
-- React Router v6
-- Bootstrap 5
-- Context API لإدارة حالة السلة
+### التقنيات المستخدمة
+
+| التقنية | الاستخدام |
+|---------|-----------|
+| React 18 | واجهة المستخدم |
+| React Router v6 | التنقل بين الصفحات |
+| Bootstrap 5 | التنسيق والتصميم المتجاوب |
+| Context API | إدارة حالة السلة |
+
+---
+
+## English
+
+**Food delivery** web app built with **React** and **Bootstrap**. Browse the menu, filter by category, add items to cart, and complete a mock checkout with delivery details. Cart state persists in **localStorage**.
+
+**Stack:** React 18, React Router v6, Bootstrap 5, Context API.
+
+```bash
+npm install
+npm start
+```
+
+---
+
+### ملاحظة عن رسائل GitHub
+
+إذا ظهرت لك **تنبيهات أمنية (Dependabot / vulnerabilities)** على المستودع، فهي غالبًا مرتبطة بـ `react-scripts` والاعتماديات العميقة وليست بالضرورة خطأ في كودك. يمكن تجاهلها للتعلم أو تشغيل `npm audit fix` بحذر (قد يغيّر إصدارات الحزم).
+
+If you see **security alerts** on the repo, they often come from Create React App’s dependency tree; your app may still run fine locally.
